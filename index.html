@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project - Double Heart</title>
 
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./Project_PC/css/main.css">
+    <link rel="stylesheet" href="./Project_PC/css/common.css">
 
     <!-- 웹폰트 : Noto Sans KR -->
 <!--     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
+<script>
+    window.addEventListener('resize', () => { 
+        if(window.innerWidth <= 1024) {
+            location.href = '../Project_Mobile/index.html';
+        }
 
+    });
+</script>
 </head>
 
 
